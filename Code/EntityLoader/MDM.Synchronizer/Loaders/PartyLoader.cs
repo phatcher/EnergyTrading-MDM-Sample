@@ -9,7 +9,7 @@
     using EnergyTrading.Mdm.Contracts;
     using EnergyTrading.Search;
 
-    using OpenNexus.MDM.Contracts;
+    using EnergyTrading.MDM.Contracts.Sample;
 
     public class PartyLoader : MdmLoader<Party>
     {

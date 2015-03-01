@@ -61,13 +61,13 @@
     <Reference Include="Accessibility">
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
-    <Reference Include="EnergyTrading.Contracts, Version=28.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="EnergyTrading.Contracts, Version=112.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\EnergyTrading.Contracts.2.8.1.28\lib\net35\EnergyTrading.Contracts.dll</HintPath>
+      <HintPath>..\..\packages\EnergyTrading.Contracts.2.8.1.112\lib\net35\EnergyTrading.Contracts.dll</HintPath>
     </Reference>
-    <Reference Include="EnergyTrading.Core, Version=28.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\EnergyTrading.Core.2.8.1.28\lib\net40\EnergyTrading.Core.dll</HintPath>
+    <Reference Include="EnergyTrading.Core">
+      <HintPath>..\..\packages\EnergyTrading.Core.2.8.1.112\lib\net40\EnergyTrading.Core.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EnergyTrading.MDM.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -81,9 +81,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\EnergyTrading.MDM.Contracts.3.2.1.1\lib\net35\EnergyTrading.MDM.Contracts.dll</HintPath>
     </Reference>
-    <Reference Include="EnergyTrading.Unity, Version=28.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="EnergyTrading.Unity, Version=112.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\EnergyTrading.Unity.2.8.1.28\lib\net40\EnergyTrading.Unity.dll</HintPath>
+      <HintPath>..\..\packages\EnergyTrading.Unity.2.8.1.112\lib\net40\EnergyTrading.Unity.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\..\packages\EntityFramework.6.0.2\lib\net40\EntityFramework.dll</HintPath>
@@ -373,7 +373,6 @@
     <Copy SourceFiles="@(OriginalAppConfig)" DestinationFiles="@(TempAppConfig)" />
     <TransformXml Condition="$(BuildServer) == 'false'" ContinueOnError="true" Source="@(TempAppConfig)" Transform="App.$(Username).transform.config" Destination="@(OriginalAppConfig)" StackTrace="true" />
   </Target>
-  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

@@ -42,7 +42,7 @@
                     .AddCriteria("TargetPerson.Id", SearchCondition.Equals, "1", true)
                     .AddCriteria("PartyAccountabilityType", SearchCondition.Equals, "PartyRole", false);
             var key1 = search.ToKey<PartyRole>();
-            var candidate = key1.ToSearch<PartyRole>();
+            var candidate = EnergyTrading.MDM.Extensions.SearchExtensions.ToSearch<PartyRole>(key1);
             Assert.AreEqual(candidate.SearchFields.Combinator, SearchCombinator.And);
             Assert.AreEqual(candidate.SearchFields.Criterias[0].Criteria[0].Field, "TargetPerson.Id");
             Assert.AreEqual(candidate.SearchFields.Criterias[0].Criteria[1].Field, "PartyAccountabilityType");

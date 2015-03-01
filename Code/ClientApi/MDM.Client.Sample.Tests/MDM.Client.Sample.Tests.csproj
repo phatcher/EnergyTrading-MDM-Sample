@@ -35,17 +35,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EnergyTrading.Contracts, Version=28.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\EnergyTrading.Contracts.2.8.1.28\lib\net35\EnergyTrading.Contracts.dll</HintPath>
+    <Reference Include="EnergyTrading.Contracts">
+      <HintPath>..\..\packages\EnergyTrading.Contracts.2.8.1.112\lib\net35\EnergyTrading.Contracts.dll</HintPath>
     </Reference>
-    <Reference Include="EnergyTrading.Core, Version=28.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\EnergyTrading.Core.2.8.1.28\lib\net40\EnergyTrading.Core.dll</HintPath>
+    <Reference Include="EnergyTrading.Core">
+      <HintPath>..\..\packages\EnergyTrading.Core.2.8.1.112\lib\net40\EnergyTrading.Core.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EnergyTrading.EntityFramework, Version=28.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\EnergyTrading.EntityFramework.2.8.1.28\lib\net40\EnergyTrading.EntityFramework.dll</HintPath>
+      <HintPath>..\..\packages\EnergyTrading.EntityFramework.2.8.1.112\lib\net40\EnergyTrading.EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EnergyTrading.MDM.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -59,13 +58,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\EnergyTrading.MDM.Contracts.3.2.1.1\lib\net35\EnergyTrading.MDM.Contracts.dll</HintPath>
     </Reference>
-    <Reference Include="EnergyTrading.Test, Version=28.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="EnergyTrading.Test, Version=112.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\EnergyTrading.Test.2.8.1.28\lib\net40\EnergyTrading.Test.dll</HintPath>
+      <HintPath>..\..\packages\EnergyTrading.Test.2.8.1.112\lib\net40\EnergyTrading.Test.dll</HintPath>
     </Reference>
-    <Reference Include="EnergyTrading.Unity, Version=28.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\EnergyTrading.Unity.2.8.1.28\lib\net40\EnergyTrading.Unity.dll</HintPath>
+    <Reference Include="EnergyTrading.Unity">
+      <HintPath>..\..\packages\EnergyTrading.Unity.2.8.1.112\lib\net40\EnergyTrading.Unity.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\..\packages\EntityFramework.4.1.10715.0\lib\EntityFramework.dll</HintPath>
@@ -80,7 +78,10 @@
       <HintPath>..\..\packages\Unity.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="Moq">
-      <HintPath>..\..\packages\Moq.4.2.1312.1622\lib\net40\Moq.dll</HintPath>
+      <HintPath>..\..\packages\Moq.4.2.1502.0911\lib\net40\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="NCheck">
+      <HintPath>..\..\packages\NCheck.2.1.0\lib\net35\NCheck.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Newtonsoft.Json.5.0.8\lib\net40\Newtonsoft.Json.dll</HintPath>
@@ -144,7 +145,6 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

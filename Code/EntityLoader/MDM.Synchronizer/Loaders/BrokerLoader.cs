@@ -2,7 +2,7 @@ namespace MDM.Sync.Loaders
 {
     using System.Collections.Generic;
 
-    using OpenNexus.MDM.Contracts;
+    using EnergyTrading.MDM.Contracts.Sample;
 
     public class BrokerLoader : MdmLoader<Broker>
     {

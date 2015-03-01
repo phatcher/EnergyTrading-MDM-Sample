@@ -6,7 +6,7 @@
     using EnergyTrading.Mdm.Client.WebClient;
     using EnergyTrading.Search;
 
-    using OpenNexus.MDM.Contracts;
+    using EnergyTrading.MDM.Contracts.Sample;
 
     public class LegalEntityLoader : MdmLoader<LegalEntity>
     {

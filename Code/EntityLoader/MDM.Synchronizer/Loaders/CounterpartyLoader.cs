@@ -2,7 +2,7 @@
 {
     using System.Collections.Generic;
 
-    using OpenNexus.MDM.Contracts;
+    using EnergyTrading.MDM.Contracts.Sample;
 
     public class CounterpartyLoader : MdmLoader<Counterparty>
     {

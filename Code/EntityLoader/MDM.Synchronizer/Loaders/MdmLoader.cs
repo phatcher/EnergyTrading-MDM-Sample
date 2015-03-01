@@ -7,7 +7,7 @@
     using EnergyTrading.Mdm.Client.WebClient;
     using EnergyTrading.Mdm.Contracts;
 
-    using OpenNexus.MDM.Contracts;
+    using EnergyTrading.MDM.Contracts.Sample;
 
     public class MdmLoader<T> : Loader
         where T : class, IMdmEntity, new()
@@ -266,62 +266,21 @@
         {
             switch (typeof(T).Name)
             {
-                case "Agreement":
-                    var agreementDetails = (AgreementDetails)entity.Details;
-                    return agreementDetails.Name;
-                case "Book":
-                    var bookDetails = (BookDetails)entity.Details;
-                    return bookDetails.Name;
-                case "BookDefault":
-                    var bookdefaultDetails = (BookDefaultDetails)entity.Details;
-                    return bookdefaultDetails.Name;
                 case "Broker":
                     var broker = (BrokerDetails)entity.Details;
                     return broker.Name;
-
-                case "BrokerCommodity":
-                    var brokerCommodity = (BrokerCommodityDetails)entity.Details;
-                    return brokerCommodity.Name;
-
-                case "BusinessUnit":
-                    var bu = (BusinessUnitDetails)entity.Details;
-                    return bu.Name;
-
-                case "Calendar":
-                    var cd = (CalendarDetails)entity.Details;
-                    return cd.Name;
-
-                case "Commodity":
-                    var cmd = (CommodityDetails)entity.Details;
-                    return cmd.Name;
 
                 case "Counterparty":
                     var cpty = (CounterpartyDetails)entity.Details;
                     return cpty.Name;
 
-                case "Curve":
-                    var cv = (CurveDetails)entity.Details;
-                    return cv.Name;
-
                 case "Exchange":
                     var exchange = (ExchangeDetails)entity.Details;
                     return exchange.Name;
 
-                case "InstrumentType":
-                    var it = (InstrumentTypeDetails)entity.Details;
-                    return it.Name;
-
-                case "InstrumentTypeOverride":
-                    var ito = (InstrumentTypeOverrideDetails)entity.Details;
-                    return ito.Name;
-
                 case "LegalEntity":
                     var legalEntity = (LegalEntityDetails)entity.Details;
                     return legalEntity.Name;
-
-                case "Market":
-                    var md = (MarketDetails)entity.Details;
-                    return md.Name;
 
                 case "Person":
                     var personDetails = (PersonDetails)entity.Details;
@@ -331,57 +290,13 @@
                     var party = (PartyDetails)entity.Details;
                     return party.Name;
 
-                case "PartyAccountability":
-                    var partyAccountability = (PartyAccountabilityDetails)entity.Details;
-                    return partyAccountability.Name;
-
-                case "PartyRoleAccountability":
-                    var partyRoleAccoutability = (PartyRoleAccountabilityDetails)entity.Details;
-                    return partyRoleAccoutability.Name;
-
                 case "PartyRole":
                     var partyRole = (PartyRoleDetails)entity.Details;
                     return partyRole.Name;
 
-                case "Product":
-                    var product = (ProductDetails)entity.Details;
-                    return product.Name;
-
-                case "ProductCurve":
-                    var productCurve = (ProductCurveDetails)entity.Details;
-                    return productCurve.Name;
-
-                case "ProductScota":
-                    var productScota = (ProductScotaDetails)entity.Details;
-                    return productScota.Name;
-
-                case "ProductType":
-                    var productType = (ProductTypeDetails)entity.Details;
-                    return productType.Name;
-
-                case "SettlementContact":
-                    var scd = (SettlementContactDetails)entity.Details;
-                    return scd.Name;
-
                 case "SourceSystem":
                     var ss = (SourceSystemDetails)entity.Details;
                     return ss.Name;
-
-                case "Vessel":
-                    var vessel = (VesselDetails)entity.Details;
-                    return vessel.Name;
-
-                case "Unit":
-                    var ud = (UnitDetails)entity.Details;
-                    return ud.Name;
-
-                case "Tenor":
-                    var tenor = (TenorDetails)entity.Details;
-                    return tenor.Name;
-
-                case "TenorType":
-                    var tenorType = (TenorTypeDetails)entity.Details;
-                    return tenorType.Name;
 
                 default:
                     throw new NotSupportedException("No EntityName block in case statement for " + typeof(T).Name);

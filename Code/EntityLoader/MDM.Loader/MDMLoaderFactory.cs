@@ -6,12 +6,11 @@ namespace MDM.Loader
 
     using EnergyTrading.Logging;
     using EnergyTrading.Mdm.Contracts;
+    using EnergyTrading.MDM.Contracts.Sample;
     using EnergyTrading.Xml.Serialization;
 
     using MDM.Loader.FakeEntities;
     using MDM.Sync.Loaders;
-
-    using OpenNexus.MDM.Contracts;
 
     public class MDMLoaderFactory : ICreateMDMLoader
     {

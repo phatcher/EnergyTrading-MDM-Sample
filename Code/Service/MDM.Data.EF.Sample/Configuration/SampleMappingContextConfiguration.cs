@@ -30,7 +30,7 @@
         public void Configure()
         {
             // Stops EF from trying to modify the schema
-            Database.SetInitializer(new NullDatabaseInitializer<SampleMappingContext>());
+            Database.SetInitializer(new EnergyTrading.Data.EntityFramework.NullDatabaseInitializer<SampleMappingContext>());
 
             this.container.RegisterInstance<Func<DbContext>>(() => new SampleMappingContext());
             this.container.RegisterType<IDbContextProvider, DbContextProvider>(CallContextLifetimeFactory.Manager());

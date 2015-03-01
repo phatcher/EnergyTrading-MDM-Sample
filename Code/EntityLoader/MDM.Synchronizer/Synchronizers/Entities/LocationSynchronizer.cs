@@ -2,7 +2,7 @@
 {
     using EnergyTrading.Mdm.Client.Services;
 
-    using OpenNexus.MDM.Contracts;
+    using EnergyTrading.MDM.Contracts.Sample;
 
     public class LocationSynchronizer : MdmEntitySynchronizer<Location>
     {

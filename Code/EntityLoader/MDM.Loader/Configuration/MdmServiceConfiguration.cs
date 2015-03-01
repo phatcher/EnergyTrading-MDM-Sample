@@ -1,4 +1,6 @@
-﻿namespace MDM.Loader.Configuration
+﻿using Mdm.Client.Sample.Registrars;
+
+namespace MDM.Loader.Configuration
 {
     using System;
     using System.Collections.Generic;
@@ -6,8 +8,6 @@
     using EnergyTrading.Configuration;
 
     using Microsoft.Practices.Unity;
-
-    using OpenNexus.Mdm.Client.Registrars;
 
     public class MdmServiceConfiguration : IGlobalConfigurationTask
     {

@@ -1,8 +1,6 @@
-namespace EnergyTrading.MDM.Test.Checkers.Contract
+namespace EnergyTrading.MDM.Test.Checkers.Contracts
 {
-    using EnergyTrading.Test;
-
-    public class ExchangeChecker : Checker<EnergyTrading.MDM.Contracts.Sample.Exchange>
+    public class ExchangeChecker : NCheck.Checker<EnergyTrading.MDM.Contracts.Sample.Exchange>
     {
         public ExchangeChecker()
         {

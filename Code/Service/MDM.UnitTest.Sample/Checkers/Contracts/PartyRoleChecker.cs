@@ -1,8 +1,6 @@
-namespace EnergyTrading.MDM.Test.Checkers.Contract
+namespace EnergyTrading.MDM.Test.Checkers.Contracts
 {
-    using EnergyTrading.Test;
-
-    public class PartyRoleChecker : Checker<EnergyTrading.MDM.Contracts.Sample.PartyRole>
+    public class PartyRoleChecker : NCheck.Checker<EnergyTrading.MDM.Contracts.Sample.PartyRole>
     {
         public PartyRoleChecker()
         {

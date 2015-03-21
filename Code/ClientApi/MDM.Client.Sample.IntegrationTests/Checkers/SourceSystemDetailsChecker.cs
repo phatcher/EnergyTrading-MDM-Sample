@@ -8,11 +8,11 @@ namespace MDM.Client.Sample.IntegrationTests.Checkers
     using EnergyTrading.Mdm.Contracts;
     using EnergyTrading.Test;
 
-    public class SourceSystemDetailsChecker : Checker<SourceSystemDetails>
+    public class SourceSystemDetailsChecker : NCheck.Checker<SourceSystemDetails>
     {
         public SourceSystemDetailsChecker()
         {
-			            this.Compare(x => x.Name);
-			        }
+			Compare(x => x.Name);
+		}
     }
 }

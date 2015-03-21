@@ -1,9 +1,6 @@
 ﻿namespace EnergyTrading.MDM.Test.Checkers.Contracts
 {
-    using EnergyTrading.Test;
-    using LegalEntityDetails = EnergyTrading.MDM.Contracts.Sample.LegalEntityDetails;
-
-    public class LegalEntityDetailsChecker : Checker<LegalEntityDetails>
+    public class LegalEntityDetailsChecker : NCheck.Checker<EnergyTrading.MDM.Contracts.Sample.LegalEntityDetails>
     {
         public LegalEntityDetailsChecker()
         {

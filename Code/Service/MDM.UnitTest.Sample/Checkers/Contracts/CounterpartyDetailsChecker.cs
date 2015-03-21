@@ -1,12 +1,6 @@
-namespace EnergyTrading.MDM.Test.Checkers.Contract
+namespace EnergyTrading.MDM.Test.Checkers.Contracts
 {
-    using System;
-
-    using EnergyTrading.MDM;
-    using EnergyTrading.MDM.Contracts.Sample; using EnergyTrading.Mdm.Contracts;
-    using EnergyTrading.Test;
-
-    public class CounterpartyDetailsChecker : Checker<EnergyTrading.MDM.Contracts.Sample.CounterpartyDetails>
+    public class CounterpartyDetailsChecker : NCheck.Checker<EnergyTrading.MDM.Contracts.Sample.CounterpartyDetails>
     {
         public CounterpartyDetailsChecker()
         {

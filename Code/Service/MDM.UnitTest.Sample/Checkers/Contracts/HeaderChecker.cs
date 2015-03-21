@@ -1,9 +1,8 @@
 ﻿namespace EnergyTrading.MDM.Test.Checkers.Contracts
 {
-    using EnergyTrading.MDM.Contracts.Sample; using EnergyTrading.Mdm.Contracts;
-    using EnergyTrading.Test;
+    using EnergyTrading.Mdm.Contracts;
 
-    public class HeaderChecker : Checker<Header>
+    public class HeaderChecker : NCheck.Checker<Header>
     {
         public HeaderChecker()
         {

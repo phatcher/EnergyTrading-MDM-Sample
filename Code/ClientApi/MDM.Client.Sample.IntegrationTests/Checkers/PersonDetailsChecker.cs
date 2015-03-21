@@ -6,14 +6,13 @@
 namespace MDM.Client.Sample.IntegrationTests.Checkers
 {
     using EnergyTrading.MDM.Contracts.Sample;
-    using EnergyTrading.Test;
 
-    public class PersonDetailsChecker : Checker<PersonDetails>
+    public class PersonDetailsChecker : NCheck.Checker<PersonDetails>
     {
         public PersonDetailsChecker()
         {
-			            this.Compare(x => x.Forename);
-			            this.Compare(x => x.Surname);
-			        }
+			Compare(x => x.Forename);
+			Compare(x => x.Surname);
+		}
     }
 }

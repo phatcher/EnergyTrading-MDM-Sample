@@ -1,8 +1,6 @@
-namespace EnergyTrading.MDM.Test.Checkers.Contract
+namespace EnergyTrading.MDM.Test.Checkers.Contracts
 {
-    using EnergyTrading.Test;
-
-    public class CounterpartyChecker : Checker<EnergyTrading.MDM.Contracts.Sample.Counterparty>
+    public class CounterpartyChecker : NCheck.Checker<EnergyTrading.MDM.Contracts.Sample.Counterparty>
     {
         public CounterpartyChecker()
         {

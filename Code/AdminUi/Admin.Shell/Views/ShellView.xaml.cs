@@ -23,11 +23,11 @@
             {
                 if (window.WindowState == WindowState.Maximized)
                 {
-                    SystemCommands.ShowSystemMenu(window, new Point(systemMenuOffset, systemMenuOffset));
+                    Microsoft.Windows.Shell.SystemCommands.ShowSystemMenu(window, new Point(systemMenuOffset, systemMenuOffset));
                 }
                 else if (window.WindowState == WindowState.Normal)
                 {
-                    SystemCommands.ShowSystemMenu(
+                    Microsoft.Windows.Shell.SystemCommands.ShowSystemMenu(
                         window, 
                         new Point(window.Left + systemMenuOffset, window.Top + systemMenuOffset));
                 }
@@ -39,7 +39,7 @@
             var window = (Window)e.Parameter;
             if (window != null)
             {
-                SystemCommands.CloseWindow(window);
+                Microsoft.Windows.Shell.SystemCommands.CloseWindow(window);
             }
         }
 
@@ -48,7 +48,7 @@
             var window = (Window)e.Parameter;
             if (window != null)
             {
-                SystemCommands.MaximizeWindow(window);
+                Microsoft.Windows.Shell.SystemCommands.MaximizeWindow(window);
             }
         }
 
@@ -57,7 +57,7 @@
             var window = (Window)e.Parameter;
             if (window != null)
             {
-                SystemCommands.MinimizeWindow(window);
+                Microsoft.Windows.Shell.SystemCommands.MinimizeWindow(window);
             }
         }
 
@@ -66,7 +66,7 @@
             var window = (Window)e.Parameter;
             if (window != null)
             {
-                SystemCommands.RestoreWindow(window);
+                Microsoft.Windows.Shell.SystemCommands.RestoreWindow(window);
             }
         }
     }

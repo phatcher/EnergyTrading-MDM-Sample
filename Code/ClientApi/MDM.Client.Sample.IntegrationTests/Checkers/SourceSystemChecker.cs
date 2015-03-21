@@ -6,14 +6,13 @@
 namespace MDM.Client.Sample.IntegrationTests.Checkers
 {
     using EnergyTrading.Mdm.Contracts;
-    using EnergyTrading.Test;
 
-    public class SourceSystemChecker : Checker<SourceSystem>
+    public class SourceSystemChecker : NCheck.Checker<SourceSystem>
     {
         public SourceSystemChecker()
         {
-            this.Compare(x => x.Identifiers);
-            this.Compare(x => x.Details);
+            Compare(x => x.Identifiers);
+            Compare(x => x.Details);
         }
     }
 }

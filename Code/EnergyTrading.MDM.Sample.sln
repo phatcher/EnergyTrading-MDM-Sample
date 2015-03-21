@@ -55,7 +55,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Admin.UnitTest", "AdminUi\A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{100AE0B2-C71D-4893-BC78-113804AC3EC1}"
 	ProjectSection(SolutionItems) = preProject
-		Database\MDM_Sample_TableScripts.sql = Database\MDM_Sample_TableScripts.sql
+		..\Database\MDM_Sample_TableScripts.sql = ..\Database\MDM_Sample_TableScripts.sql
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDM.Synchronizer", "EntityLoader\MDM.Synchronizer\MDM.Synchronizer.csproj", "{1C65E210-7D6F-404D-A500-73BE2061B9D0}"
@@ -289,13 +289,13 @@ Global
 		{1C65E210-7D6F-404D-A500-73BE2061B9D0}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{1C65E210-7D6F-404D-A500-73BE2061B9D0}.Release|x86.ActiveCfg = Release|Any CPU
 		{E4BF33BC-592E-4710-B7C7-618CB1D707C3}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{E4BF33BC-592E-4710-B7C7-618CB1D707C3}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{E4BF33BC-592E-4710-B7C7-618CB1D707C3}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{E4BF33BC-592E-4710-B7C7-618CB1D707C3}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E4BF33BC-592E-4710-B7C7-618CB1D707C3}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{E4BF33BC-592E-4710-B7C7-618CB1D707C3}.Debug|x86.ActiveCfg = Debug|x86
 		{E4BF33BC-592E-4710-B7C7-618CB1D707C3}.Debug|x86.Build.0 = Debug|x86
 		{E4BF33BC-592E-4710-B7C7-618CB1D707C3}.Release|Any CPU.ActiveCfg = Release|x86
-		{E4BF33BC-592E-4710-B7C7-618CB1D707C3}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{E4BF33BC-592E-4710-B7C7-618CB1D707C3}.Release|Mixed Platforms.Build.0 = Release|x86
+		{E4BF33BC-592E-4710-B7C7-618CB1D707C3}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E4BF33BC-592E-4710-B7C7-618CB1D707C3}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{E4BF33BC-592E-4710-B7C7-618CB1D707C3}.Release|x86.ActiveCfg = Release|x86
 		{E4BF33BC-592E-4710-B7C7-618CB1D707C3}.Release|x86.Build.0 = Release|x86
 		{F71130F5-EAE3-46FE-94A0-231DD136B450}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

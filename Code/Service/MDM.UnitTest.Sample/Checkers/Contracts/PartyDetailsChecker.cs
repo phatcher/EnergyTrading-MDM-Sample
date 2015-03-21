@@ -1,9 +1,6 @@
 namespace EnergyTrading.MDM.Test.Checkers.Contracts
 {
-    using EnergyTrading.MDM.Contracts.Sample; using EnergyTrading.Mdm.Contracts;
-    using EnergyTrading.Test;
-
-    public class PartyDetailsChecker : Checker<PartyDetails>
+    public class PartyDetailsChecker : NCheck.Checker<EnergyTrading.MDM.Contracts.Sample.PartyDetails>
     {
         public PartyDetailsChecker()
         {

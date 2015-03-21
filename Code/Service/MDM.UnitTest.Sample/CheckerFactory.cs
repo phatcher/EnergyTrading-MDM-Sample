@@ -1,7 +1,5 @@
 ﻿namespace EnergyTrading.MDM.Test
 {
-    using EnergyTrading.Test;
-
     public class CheckerFactory : EnergyTrading.Test.CheckerFactory
     {
         public CheckerFactory()
@@ -11,9 +9,7 @@
 
         private void Initialize()
         {
-            this.Builder = new CheckerBuilder(this);
-
-            this.Register(typeof(CheckerFactory).Assembly);
+            Register(typeof(CheckerFactory).Assembly);
         }
     }
 }

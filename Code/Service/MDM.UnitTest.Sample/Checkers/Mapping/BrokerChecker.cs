@@ -1,11 +1,8 @@
 namespace EnergyTrading.MDM.Test.Checkers.Mapping
 {
-    using System;
-
     using EnergyTrading.MDM;
-    using EnergyTrading.Test;
 
-    public class BrokerChecker : Checker<Broker>
+    public class BrokerChecker : NCheck.Checker<Broker>
     {
         public BrokerChecker()
         {

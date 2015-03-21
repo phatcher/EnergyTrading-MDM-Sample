@@ -1,12 +1,6 @@
-namespace EnergyTrading.MDM.Test.Checkers.Contract
+namespace EnergyTrading.MDM.Test.Checkers.Contracts
 {
-    using System;
-
-    using EnergyTrading.MDM;
-    using EnergyTrading.Test;
-    using EnergyTrading.MDM.Contracts.Sample; using EnergyTrading.Mdm.Contracts;
-
-    public class BrokerDetailsChecker : Checker<EnergyTrading.MDM.Contracts.Sample.BrokerDetails>
+    public class BrokerDetailsChecker : NCheck.Checker<EnergyTrading.MDM.Contracts.Sample.BrokerDetails>
     {
         public BrokerDetailsChecker()
         {
